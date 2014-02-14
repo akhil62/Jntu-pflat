@@ -34,6 +34,7 @@ class Student(models.Model):
         admn_no=models.CharField(max_length=15)
 	reg_no=models.CharField(max_length=15)	
         category=models.ForeignKey(SocialCategory)
+        program=models.ForeignKey(Program)
         sex=models.CharField(max_length=10)
         sub=models.ForeignKey(Department, related_name = "subject")
 	father_name=models.CharField(max_length=50)
